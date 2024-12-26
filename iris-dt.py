@@ -8,9 +8,10 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 import dagshub
-dagshub.init(repo_owner='campusx-official', repo_name='mlflow-dagshub-demo', mlflow=True)
+dagshub.init(repo_owner='netra200021kcbdr', repo_name='mlflow-dagshub-demo', mlflow=True)
 
-mlflow.set_tracking_uri("https://dagshub.com/campusx-official/mlflow-dagshub-demo.mlflow")
+# Setting the url of the dagshub which is the remote experiment tracking. 
+mlflow.set_tracking_uri("https://dagshub.com/netra200021kcbdr/mlflow-dagshub-demo.mlflow")
 
 # Load the iris dataset
 iris = load_iris()
